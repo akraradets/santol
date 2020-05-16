@@ -15,10 +15,35 @@ farmer1 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer1/*"].each do |pic|
-    farmer1.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer1.save
+plot1_1 = Plot.new(
+    farmer_id: 1,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '1',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot1_1.save
 farmer2 = Farmer.new( 
     title: 'นาย',
     firstName: 'จักษณ์ขจร',
@@ -36,10 +61,35 @@ farmer2 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer2/*"].each do |pic|
-    farmer2.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer2.save
+plot2_2 = Plot.new(
+    farmer_id: 2,
+    areaRai: 1.1,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot2_2.save
 farmer3 = Farmer.new( 
     title: 'นาง',
     firstName: 'มณฑิรา',
@@ -57,10 +107,35 @@ farmer3 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer3/*"].each do |pic|
-    farmer3.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer3.save
+plot3_3 = Plot.new(
+    farmer_id: 3,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '2',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot3_3.save
 farmer4 = Farmer.new( 
     title: '',
     firstName: 'พูลศิลป์',
@@ -78,10 +153,35 @@ farmer4 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer4/*"].each do |pic|
-    farmer4.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer4.save
+plot4_4 = Plot.new(
+    farmer_id: 4,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '2',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot4_4.save
 farmer5 = Farmer.new( 
     title: 'นาย',
     firstName: 'วิเชียร',
@@ -99,10 +199,35 @@ farmer5 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer5/*"].each do |pic|
-    farmer5.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer5.save
+plot5_5 = Plot.new(
+    farmer_id: 5,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '2',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot5_5.save
 farmer6 = Farmer.new( 
     title: 'นาง',
     firstName: 'ทองคำ',
@@ -120,10 +245,35 @@ farmer6 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer6/*"].each do |pic|
-    farmer6.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer6.save
+plot6_6 = Plot.new(
+    farmer_id: 6,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot6_6.save
 farmer7 = Farmer.new( 
     title: 'นาย',
     firstName: 'ณรงค์',
@@ -141,10 +291,35 @@ farmer7 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer7/*"].each do |pic|
-    farmer7.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer7.save
+plot7_7 = Plot.new(
+    farmer_id: 7,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot7_7.save
 farmer8 = Farmer.new( 
     title: 'นาง',
     firstName: 'วิญญา',
@@ -162,10 +337,35 @@ farmer8 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer8/*"].each do |pic|
-    farmer8.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer8.save
+plot8_8 = Plot.new(
+    farmer_id: 8,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot8_8.save
 farmer9 = Farmer.new( 
     title: 'นาง',
     firstName: 'ดลพร',
@@ -183,10 +383,35 @@ farmer9 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer9/*"].each do |pic|
-    farmer9.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer9.save
+plot9_9 = Plot.new(
+    farmer_id: 9,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot9_9.save
 farmer10 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'เบญญาภา',
@@ -204,10 +429,35 @@ farmer10 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer10/*"].each do |pic|
-    farmer10.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer10.save
+plot10_10 = Plot.new(
+    farmer_id: 10,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot10_10.save
 farmer11 = Farmer.new( 
     title: 'นาง',
     firstName: 'ประไพ',
@@ -225,10 +475,35 @@ farmer11 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer11/*"].each do |pic|
-    farmer11.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer11.save
+plot11_11 = Plot.new(
+    farmer_id: 11,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot11_11.save
 farmer12 = Farmer.new( 
     title: 'นาย',
     firstName: 'ประสิทธิ์',
@@ -246,10 +521,35 @@ farmer12 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer12/*"].each do |pic|
-    farmer12.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer12.save
+plot12_12 = Plot.new(
+    farmer_id: 12,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot12_12.save
 farmer13 = Farmer.new( 
     title: 'นาย',
     firstName: 'วิเชียร',
@@ -267,10 +567,35 @@ farmer13 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer13/*"].each do |pic|
-    farmer13.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer13.save
+plot13_13 = Plot.new(
+    farmer_id: 13,
+    areaRai: 0.0,
+    treeCount: 7,
+    breed: 'อีล่า',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot13_13.save
 farmer14 = Farmer.new( 
     title: 'นาย',
     firstName: 'ณรงค์ฤทธิ์',
@@ -288,10 +613,35 @@ farmer14 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer14/*"].each do |pic|
-    farmer14.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer14.save
+plot14_14 = Plot.new(
+    farmer_id: 14,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot14_14.save
 farmer15 = Farmer.new( 
     title: 'นาย',
     firstName: 'สมชาย',
@@ -309,10 +659,35 @@ farmer15 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer15/*"].each do |pic|
-    farmer15.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer15.save
+plot15_15 = Plot.new(
+    farmer_id: 15,
+    areaRai: 9.054375,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot15_15.save
 farmer16 = Farmer.new( 
     title: 'นาง',
     firstName: 'ราตรี',
@@ -330,32 +705,64 @@ farmer16 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer16/*"].each do |pic|
-    farmer16.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
 farmer16.save
-farmer17 = Farmer.new( 
-    title: 'นาง',
-    firstName: 'ราตรี',
-    lastName: 'ประสานทอง',
-    dateOfBirth: Date.strptime('None', '%d-%m-%Y'),
-    group: '-',
-    addressNo: '83',
+plot16_16 = Plot.new(
+    farmer_id: 16,
+    areaRai: 0.0,
+    treeCount: 10,
+    breed: 'อีล่า',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
     addressMoo: '4',
     addressTambon: 'คลองน้อย',
     addressAmphoe: 'เมือง',
     addressProvince: 'สุราษฎร์ธานี',
     addressZipcode: '',
-    phone: '-',
-    facebook: '-',
-    line: '-',
-    email: '-'
+    lat: '',
+    long: ''
     )
-Dir[Rails.root + "seedPicture/farmer17/*"].each do |pic|
-    farmer17.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer17.save
-farmer18 = Farmer.new( 
+plot16_16.save
+plot16_17 = Plot.new(
+    farmer_id: 16,
+    areaRai: 2.0,
+    treeCount: 40,
+    breed: 'อีล่า',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot16_17.save
+farmer17 = Farmer.new( 
     title: 'นาย',
     firstName: 'มนัส',
     lastName: 'อัมรักษ์',
@@ -372,11 +779,36 @@ farmer18 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer18/*"].each do |pic|
-    farmer18.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer18.save
-farmer19 = Farmer.new( 
+farmer17.save
+plot17_18 = Plot.new(
+    farmer_id: 17,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot17_18.save
+farmer18 = Farmer.new( 
     title: 'นาย',
     firstName: 'ชุ่ม',
     lastName: 'เอี่ยมจินดา',
@@ -393,11 +825,36 @@ farmer19 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer19/*"].each do |pic|
-    farmer19.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer19.save
-farmer20 = Farmer.new( 
+farmer18.save
+plot18_19 = Plot.new(
+    farmer_id: 18,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot18_19.save
+farmer19 = Farmer.new( 
     title: 'นาย',
     firstName: 'ศุภเดช',
     lastName: 'จันทร์ชาวนา',
@@ -414,11 +871,36 @@ farmer20 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer20/*"].each do |pic|
-    farmer20.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer20.save
-farmer21 = Farmer.new( 
+farmer19.save
+plot19_20 = Plot.new(
+    farmer_id: 19,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot19_20.save
+farmer20 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุภาภรณ์',
     lastName: 'ศรีสว่าง',
@@ -435,11 +917,36 @@ farmer21 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer21/*"].each do |pic|
-    farmer21.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer21.save
-farmer22 = Farmer.new( 
+farmer20.save
+plot20_21 = Plot.new(
+    farmer_id: 20,
+    areaRai: 0.0,
+    treeCount: 11,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot20_21.save
+farmer21 = Farmer.new( 
     title: 'นาง',
     firstName: 'ใกล้รุ่ง',
     lastName: 'เอี่ยมจินดา',
@@ -456,11 +963,36 @@ farmer22 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer22/*"].each do |pic|
-    farmer22.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer22.save
-farmer23 = Farmer.new( 
+farmer21.save
+plot21_22 = Plot.new(
+    farmer_id: 21,
+    areaRai: 0.0,
+    treeCount: 3,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot21_22.save
+farmer22 = Farmer.new( 
     title: 'นาย',
     firstName: 'ทวี',
     lastName: 'ตรีสุวรรณ',
@@ -477,11 +1009,36 @@ farmer23 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer23/*"].each do |pic|
-    farmer23.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer23.save
-farmer24 = Farmer.new( 
+farmer22.save
+plot22_23 = Plot.new(
+    farmer_id: 22,
+    areaRai: 5.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot22_23.save
+farmer23 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'สาลี่',
     lastName: 'ลอยประเสริฐ',
@@ -498,11 +1055,36 @@ farmer24 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer24/*"].each do |pic|
-    farmer24.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer24.save
-farmer25 = Farmer.new( 
+farmer23.save
+plot23_24 = Plot.new(
+    farmer_id: 23,
+    areaRai: 1.000625,
+    treeCount: 16,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot23_24.save
+farmer24 = Farmer.new( 
     title: 'นาย',
     firstName: 'ประทุม',
     lastName: 'ลอยประเสริฐ',
@@ -519,11 +1101,36 @@ farmer25 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer25/*"].each do |pic|
-    farmer25.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer25.save
-farmer26 = Farmer.new( 
+farmer24.save
+plot24_25 = Plot.new(
+    farmer_id: 24,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot24_25.save
+farmer25 = Farmer.new( 
     title: 'นาย',
     firstName: 'สุเทพ',
     lastName: 'ผลพฤกษ์รัตน์',
@@ -540,11 +1147,36 @@ farmer26 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer26/*"].each do |pic|
-    farmer26.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer26.save
-farmer27 = Farmer.new( 
+farmer25.save
+plot25_26 = Plot.new(
+    farmer_id: 25,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot25_26.save
+farmer26 = Farmer.new( 
     title: 'นาง',
     firstName: 'ศรีธันยา',
     lastName: 'ศรีเพชรพูล',
@@ -561,11 +1193,36 @@ farmer27 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer27/*"].each do |pic|
-    farmer27.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer27.save
-farmer28 = Farmer.new( 
+farmer26.save
+plot26_27 = Plot.new(
+    farmer_id: 26,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot26_27.save
+farmer27 = Farmer.new( 
     title: 'นาย',
     firstName: 'กำจัด',
     lastName: 'สร้อยจำปา',
@@ -582,11 +1239,36 @@ farmer28 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer28/*"].each do |pic|
-    farmer28.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer28.save
-farmer29 = Farmer.new( 
+farmer27.save
+plot27_28 = Plot.new(
+    farmer_id: 27,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot27_28.save
+farmer28 = Farmer.new( 
     title: 'นาง',
     firstName: 'มณฑา',
     lastName: 'เสาแสง',
@@ -603,11 +1285,36 @@ farmer29 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer29/*"].each do |pic|
-    farmer29.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer29.save
-farmer30 = Farmer.new( 
+farmer28.save
+plot28_29 = Plot.new(
+    farmer_id: 28,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot28_29.save
+farmer29 = Farmer.new( 
     title: 'นาง',
     firstName: 'ณัฐรุจา',
     lastName: 'คงทอง',
@@ -624,11 +1331,36 @@ farmer30 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer30/*"].each do |pic|
-    farmer30.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer30.save
-farmer31 = Farmer.new( 
+farmer29.save
+plot29_30 = Plot.new(
+    farmer_id: 29,
+    areaRai: 0.024375,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot29_30.save
+farmer30 = Farmer.new( 
     title: 'นาง',
     firstName: 'วงจันทร์',
     lastName: 'เนยชะนะ',
@@ -645,11 +1377,36 @@ farmer31 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer31/*"].each do |pic|
-    farmer31.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer31.save
-farmer32 = Farmer.new( 
+farmer30.save
+plot30_31 = Plot.new(
+    farmer_id: 30,
+    areaRai: 3.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot30_31.save
+farmer31 = Farmer.new( 
     title: 'นาย',
     firstName: 'ผัน',
     lastName: 'จงอักษร',
@@ -666,11 +1423,36 @@ farmer32 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer32/*"].each do |pic|
-    farmer32.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer32.save
-farmer33 = Farmer.new( 
+farmer31.save
+plot31_32 = Plot.new(
+    farmer_id: 31,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot31_32.save
+farmer32 = Farmer.new( 
     title: 'นาง',
     firstName: 'อารีวรรณ',
     lastName: 'ไม้ทองงาม',
@@ -687,11 +1469,36 @@ farmer33 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer33/*"].each do |pic|
-    farmer33.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer33.save
-farmer34 = Farmer.new( 
+farmer32.save
+plot32_33 = Plot.new(
+    farmer_id: 32,
+    areaRai: 1.0,
+    treeCount: 30,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot32_33.save
+farmer33 = Farmer.new( 
     title: 'นาง',
     firstName: 'พรทิพา',
     lastName: 'จันทรสุวรรณ',
@@ -708,11 +1515,36 @@ farmer34 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer34/*"].each do |pic|
-    farmer34.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer34.save
-farmer35 = Farmer.new( 
+farmer33.save
+plot33_34 = Plot.new(
+    farmer_id: 33,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot33_34.save
+farmer34 = Farmer.new( 
     title: 'นาย',
     firstName: 'วิเชียร',
     lastName: 'จันทรสุวรรณ',
@@ -729,11 +1561,36 @@ farmer35 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer35/*"].each do |pic|
-    farmer35.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer35.save
-farmer36 = Farmer.new( 
+farmer34.save
+plot34_35 = Plot.new(
+    farmer_id: 34,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot34_35.save
+farmer35 = Farmer.new( 
     title: 'นาย',
     firstName: 'นิรันดร',
     lastName: 'บุญช้าง',
@@ -750,11 +1607,36 @@ farmer36 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer36/*"].each do |pic|
-    farmer36.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer36.save
-farmer37 = Farmer.new( 
+farmer35.save
+plot35_36 = Plot.new(
+    farmer_id: 35,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot35_36.save
+farmer36 = Farmer.new( 
     title: 'นาง',
     firstName: 'บุญทรัพย์',
     lastName: 'ถาวรยิ่ง',
@@ -771,11 +1653,36 @@ farmer37 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer37/*"].each do |pic|
-    farmer37.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer37.save
-farmer38 = Farmer.new( 
+farmer36.save
+plot36_37 = Plot.new(
+    farmer_id: 36,
+    areaRai: 9.03,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot36_37.save
+farmer37 = Farmer.new( 
     title: 'นาง',
     firstName: 'ชุลี',
     lastName: 'เทียมประทีป',
@@ -792,11 +1699,36 @@ farmer38 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer38/*"].each do |pic|
-    farmer38.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer38.save
-farmer39 = Farmer.new( 
+farmer37.save
+plot37_38 = Plot.new(
+    farmer_id: 37,
+    areaRai: 7.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot37_38.save
+farmer38 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'ประไพพรรณ',
     lastName: 'มณีโชติ',
@@ -813,11 +1745,36 @@ farmer39 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer39/*"].each do |pic|
-    farmer39.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer39.save
-farmer40 = Farmer.new( 
+farmer38.save
+plot38_39 = Plot.new(
+    farmer_id: 38,
+    areaRai: 7.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot38_39.save
+farmer39 = Farmer.new( 
     title: 'นาย',
     firstName: 'วัชรินทร์',
     lastName: 'โหมดเครือ',
@@ -834,11 +1791,36 @@ farmer40 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer40/*"].each do |pic|
-    farmer40.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer40.save
-farmer41 = Farmer.new( 
+farmer39.save
+plot39_40 = Plot.new(
+    farmer_id: 39,
+    areaRai: 1.033125,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot39_40.save
+farmer40 = Farmer.new( 
     title: 'นาย',
     firstName: 'สมบัติ',
     lastName: 'สอนดี',
@@ -855,11 +1837,36 @@ farmer41 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer41/*"].each do |pic|
-    farmer41.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer41.save
-farmer42 = Farmer.new( 
+farmer40.save
+plot40_41 = Plot.new(
+    farmer_id: 40,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot40_41.save
+farmer41 = Farmer.new( 
     title: 'นาย',
     firstName: 'ครองลาภ',
     lastName: 'พร้อมประเสริฐ',
@@ -876,11 +1883,36 @@ farmer42 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer42/*"].each do |pic|
-    farmer42.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer42.save
-farmer43 = Farmer.new( 
+farmer41.save
+plot41_42 = Plot.new(
+    farmer_id: 41,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot41_42.save
+farmer42 = Farmer.new( 
     title: 'นาย',
     firstName: 'สมยศ',
     lastName: 'ยมนา',
@@ -897,11 +1929,36 @@ farmer43 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer43/*"].each do |pic|
-    farmer43.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer43.save
-farmer44 = Farmer.new( 
+farmer42.save
+plot42_43 = Plot.new(
+    farmer_id: 42,
+    areaRai: 8.065625,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot42_43.save
+farmer43 = Farmer.new( 
     title: 'นาย',
     firstName: 'สุราษฎร์',
     lastName: 'ขนุนนิล',
@@ -918,11 +1975,36 @@ farmer44 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer44/*"].each do |pic|
-    farmer44.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer44.save
-farmer45 = Farmer.new( 
+farmer43.save
+plot43_44 = Plot.new(
+    farmer_id: 43,
+    areaRai: 6.0,
+    treeCount: 30,
+    breed: 'อีล่า/ปุยฝ้าย',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot43_44.save
+farmer44 = Farmer.new( 
     title: 'นาง',
     firstName: 'อารีรัตน์',
     lastName: 'จันทร์ตรี',
@@ -939,11 +2021,36 @@ farmer45 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer45/*"].each do |pic|
-    farmer45.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer45.save
-farmer46 = Farmer.new( 
+farmer44.save
+plot44_45 = Plot.new(
+    farmer_id: 44,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot44_45.save
+farmer45 = Farmer.new( 
     title: 'นาย',
     firstName: 'ธวัชชัย',
     lastName: 'ขวัญช่วย',
@@ -960,11 +2067,36 @@ farmer46 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer46/*"].each do |pic|
-    farmer46.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer46.save
-farmer47 = Farmer.new( 
+farmer45.save
+plot45_46 = Plot.new(
+    farmer_id: 45,
+    areaRai: 4.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot45_46.save
+farmer46 = Farmer.new( 
     title: 'นาย',
     firstName: 'วิลัย',
     lastName: 'ปลื้มกระจ่าง',
@@ -981,11 +2113,36 @@ farmer47 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer47/*"].each do |pic|
-    farmer47.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer47.save
-farmer48 = Farmer.new( 
+farmer46.save
+plot46_47 = Plot.new(
+    farmer_id: 46,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot46_47.save
+farmer47 = Farmer.new( 
     title: 'นาย',
     firstName: 'ธนู',
     lastName: 'ธนบัตร',
@@ -1002,11 +2159,36 @@ farmer48 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer48/*"].each do |pic|
-    farmer48.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer48.save
-farmer49 = Farmer.new( 
+farmer47.save
+plot47_48 = Plot.new(
+    farmer_id: 47,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot47_48.save
+farmer48 = Farmer.new( 
     title: 'นาง',
     firstName: 'อัษณี',
     lastName: 'อ่อนเหล่',
@@ -1023,11 +2205,36 @@ farmer49 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer49/*"].each do |pic|
-    farmer49.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer49.save
-farmer50 = Farmer.new( 
+farmer48.save
+plot48_49 = Plot.new(
+    farmer_id: 48,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot48_49.save
+farmer49 = Farmer.new( 
     title: 'นาย',
     firstName: 'มณเทียร',
     lastName: 'จำนงพันธ์',
@@ -1044,11 +2251,36 @@ farmer50 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer50/*"].each do |pic|
-    farmer50.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer50.save
-farmer51 = Farmer.new( 
+farmer49.save
+plot49_50 = Plot.new(
+    farmer_id: 49,
+    areaRai: 3.038125,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot49_50.save
+farmer50 = Farmer.new( 
     title: 'นาง',
     firstName: 'ราวัลย์',
     lastName: 'จำนงค์พันธ์',
@@ -1065,11 +2297,36 @@ farmer51 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer51/*"].each do |pic|
-    farmer51.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer51.save
-farmer52 = Farmer.new( 
+farmer50.save
+plot50_51 = Plot.new(
+    farmer_id: 50,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot50_51.save
+farmer51 = Farmer.new( 
     title: 'นาย',
     firstName: 'วิชินทร์',
     lastName: 'ภักดี',
@@ -1086,11 +2343,36 @@ farmer52 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer52/*"].each do |pic|
-    farmer52.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer52.save
-farmer53 = Farmer.new( 
+farmer51.save
+plot51_52 = Plot.new(
+    farmer_id: 51,
+    areaRai: 4.11125,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot51_52.save
+farmer52 = Farmer.new( 
     title: 'นาง',
     firstName: 'ศศิธร',
     lastName: 'บุญขาว',
@@ -1107,11 +2389,36 @@ farmer53 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer53/*"].each do |pic|
-    farmer53.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer53.save
-farmer54 = Farmer.new( 
+farmer52.save
+plot52_53 = Plot.new(
+    farmer_id: 52,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '5',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot52_53.save
+farmer53 = Farmer.new( 
     title: 'นาย',
     firstName: 'สมคิด',
     lastName: 'สอนดี',
@@ -1128,11 +2435,36 @@ farmer54 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer54/*"].each do |pic|
-    farmer54.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer54.save
-farmer55 = Farmer.new( 
+farmer53.save
+plot53_54 = Plot.new(
+    farmer_id: 53,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot53_54.save
+farmer54 = Farmer.new( 
     title: 'นาง',
     firstName: 'ขนิษฐา',
     lastName: 'ภักดี',
@@ -1149,11 +2481,36 @@ farmer55 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer55/*"].each do |pic|
-    farmer55.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer55.save
-farmer56 = Farmer.new( 
+farmer54.save
+plot54_55 = Plot.new(
+    farmer_id: 54,
+    areaRai: 4.0,
+    treeCount: 50,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot54_55.save
+farmer55 = Farmer.new( 
     title: 'นาง',
     firstName: 'เบญจมาศ',
     lastName: 'อินทร์เมือง',
@@ -1170,11 +2527,36 @@ farmer56 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer56/*"].each do |pic|
-    farmer56.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer56.save
-farmer57 = Farmer.new( 
+farmer55.save
+plot55_56 = Plot.new(
+    farmer_id: 55,
+    areaRai: 5.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot55_56.save
+farmer56 = Farmer.new( 
     title: 'นาย',
     firstName: 'ทวีป',
     lastName: 'หุ่นบำรุง',
@@ -1191,11 +2573,36 @@ farmer57 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer57/*"].each do |pic|
-    farmer57.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer57.save
-farmer58 = Farmer.new( 
+farmer56.save
+plot56_57 = Plot.new(
+    farmer_id: 56,
+    areaRai: 3.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot56_57.save
+farmer57 = Farmer.new( 
     title: 'นาย',
     firstName: 'สัมฤทธิ์',
     lastName: 'ปลื้มกระจ่าง',
@@ -1212,11 +2619,36 @@ farmer58 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer58/*"].each do |pic|
-    farmer58.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer58.save
-farmer59 = Farmer.new( 
+farmer57.save
+plot57_58 = Plot.new(
+    farmer_id: 57,
+    areaRai: 3.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot57_58.save
+farmer58 = Farmer.new( 
     title: 'นาย',
     firstName: 'ประเสริฐ',
     lastName: 'ทองอินทร์',
@@ -1233,11 +2665,36 @@ farmer59 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer59/*"].each do |pic|
-    farmer59.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer59.save
-farmer60 = Farmer.new( 
+farmer58.save
+plot58_59 = Plot.new(
+    farmer_id: 58,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot58_59.save
+farmer59 = Farmer.new( 
     title: 'นาง',
     firstName: 'วิภาดา',
     lastName: 'เนียมทอง',
@@ -1254,11 +2711,36 @@ farmer60 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer60/*"].each do |pic|
-    farmer60.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer60.save
-farmer61 = Farmer.new( 
+farmer59.save
+plot59_60 = Plot.new(
+    farmer_id: 59,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot59_60.save
+farmer60 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุรีย์มาศ',
     lastName: 'ด่านกุลชัย',
@@ -1275,11 +2757,36 @@ farmer61 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer61/*"].each do |pic|
-    farmer61.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer61.save
-farmer62 = Farmer.new( 
+farmer60.save
+plot60_61 = Plot.new(
+    farmer_id: 60,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot60_61.save
+farmer61 = Farmer.new( 
     title: 'นาง',
     firstName: 'คณิต',
     lastName: 'นวลจันทร์',
@@ -1296,11 +2803,36 @@ farmer62 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer62/*"].each do |pic|
-    farmer62.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer62.save
-farmer63 = Farmer.new( 
+farmer61.save
+plot61_62 = Plot.new(
+    farmer_id: 61,
+    areaRai: 1.0,
+    treeCount: 20,
+    breed: 'อีล่า',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot61_62.save
+farmer62 = Farmer.new( 
     title: 'นาง',
     firstName: 'อำไพ',
     lastName: 'มณีโชติ',
@@ -1317,11 +2849,36 @@ farmer63 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer63/*"].each do |pic|
-    farmer63.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer63.save
-farmer64 = Farmer.new( 
+farmer62.save
+plot62_63 = Plot.new(
+    farmer_id: 62,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot62_63.save
+farmer63 = Farmer.new( 
     title: 'นาง',
     firstName: 'ยุพา',
     lastName: 'พร้อมประเสริฐ',
@@ -1338,11 +2895,36 @@ farmer64 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer64/*"].each do |pic|
-    farmer64.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer64.save
-farmer65 = Farmer.new( 
+farmer63.save
+plot63_64 = Plot.new(
+    farmer_id: 63,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot63_64.save
+farmer64 = Farmer.new( 
     title: 'นาย',
     firstName: 'ลมัย',
     lastName: 'นะมูลมอง',
@@ -1359,11 +2941,36 @@ farmer65 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer65/*"].each do |pic|
-    farmer65.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer65.save
-farmer66 = Farmer.new( 
+farmer64.save
+plot64_65 = Plot.new(
+    farmer_id: 64,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot64_65.save
+farmer65 = Farmer.new( 
     title: 'นาง',
     firstName: 'จงกล',
     lastName: 'สมุทรเก่า',
@@ -1380,11 +2987,36 @@ farmer66 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer66/*"].each do |pic|
-    farmer66.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer66.save
-farmer67 = Farmer.new( 
+farmer65.save
+plot65_66 = Plot.new(
+    farmer_id: 65,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot65_66.save
+farmer66 = Farmer.new( 
     title: 'นาง',
     firstName: 'มลฤดี',
     lastName: 'พรหมจันทร์',
@@ -1401,11 +3033,36 @@ farmer67 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer67/*"].each do |pic|
-    farmer67.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer67.save
-farmer68 = Farmer.new( 
+farmer66.save
+plot66_67 = Plot.new(
+    farmer_id: 66,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot66_67.save
+farmer67 = Farmer.new( 
     title: 'นาง',
     firstName: 'บุปผา',
     lastName: 'พร้อมประเสริฐ',
@@ -1422,11 +3079,36 @@ farmer68 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer68/*"].each do |pic|
-    farmer68.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer68.save
-farmer69 = Farmer.new( 
+farmer67.save
+plot67_68 = Plot.new(
+    farmer_id: 67,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot67_68.save
+farmer68 = Farmer.new( 
     title: 'นาง',
     firstName: 'อำพร',
     lastName: 'จำนงค์พันธ์',
@@ -1443,11 +3125,36 @@ farmer69 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer69/*"].each do |pic|
-    farmer69.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer69.save
-farmer70 = Farmer.new( 
+farmer68.save
+plot68_69 = Plot.new(
+    farmer_id: 68,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot68_69.save
+farmer69 = Farmer.new( 
     title: 'นาง',
     firstName: 'นพมาศ',
     lastName: 'เรือนดี',
@@ -1464,11 +3171,36 @@ farmer70 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer70/*"].each do |pic|
-    farmer70.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer70.save
-farmer71 = Farmer.new( 
+farmer69.save
+plot69_70 = Plot.new(
+    farmer_id: 69,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot69_70.save
+farmer70 = Farmer.new( 
     title: 'นาย',
     firstName: 'วราพงษ์',
     lastName: 'เอี่ยมสุพรรณ',
@@ -1485,11 +3217,36 @@ farmer71 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer71/*"].each do |pic|
-    farmer71.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer71.save
-farmer72 = Farmer.new( 
+farmer70.save
+plot70_71 = Plot.new(
+    farmer_id: 70,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '6',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot70_71.save
+farmer71 = Farmer.new( 
     title: 'นาง',
     firstName: 'พรรณี',
     lastName: 'ภมร',
@@ -1506,11 +3263,36 @@ farmer72 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer72/*"].each do |pic|
-    farmer72.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer72.save
-farmer73 = Farmer.new( 
+farmer71.save
+plot71_72 = Plot.new(
+    farmer_id: 71,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot71_72.save
+farmer72 = Farmer.new( 
     title: 'นาง',
     firstName: 'ชูศรี',
     lastName: 'คำเจริญ',
@@ -1527,11 +3309,36 @@ farmer73 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer73/*"].each do |pic|
-    farmer73.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer73.save
-farmer74 = Farmer.new( 
+farmer72.save
+plot72_73 = Plot.new(
+    farmer_id: 72,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot72_73.save
+farmer73 = Farmer.new( 
     title: 'นาง',
     firstName: 'มัลลิกา',
     lastName: 'สันทอง',
@@ -1548,11 +3355,36 @@ farmer74 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer74/*"].each do |pic|
-    farmer74.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer74.save
-farmer75 = Farmer.new( 
+farmer73.save
+plot73_74 = Plot.new(
+    farmer_id: 73,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot73_74.save
+farmer74 = Farmer.new( 
     title: 'นาย',
     firstName: 'ฝน',
     lastName: 'เชื้อจ๋าย',
@@ -1569,11 +3401,36 @@ farmer75 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer75/*"].each do |pic|
-    farmer75.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer75.save
-farmer76 = Farmer.new( 
+farmer74.save
+plot74_75 = Plot.new(
+    farmer_id: 74,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot74_75.save
+farmer75 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุกันยา',
     lastName: 'ปานบำรุง',
@@ -1590,11 +3447,36 @@ farmer76 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer76/*"].each do |pic|
-    farmer76.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer76.save
-farmer77 = Farmer.new( 
+farmer75.save
+plot75_76 = Plot.new(
+    farmer_id: 75,
+    areaRai: 3.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot75_76.save
+farmer76 = Farmer.new( 
     title: 'นาง',
     firstName: 'แก้วใจ',
     lastName: 'น้ำแก้ว',
@@ -1611,11 +3493,36 @@ farmer77 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer77/*"].each do |pic|
-    farmer77.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer77.save
-farmer78 = Farmer.new( 
+farmer76.save
+plot76_77 = Plot.new(
+    farmer_id: 76,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot76_77.save
+farmer77 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'เสาวคนธ์',
     lastName: 'สันทอง',
@@ -1632,11 +3539,36 @@ farmer78 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer78/*"].each do |pic|
-    farmer78.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer78.save
-farmer79 = Farmer.new( 
+farmer77.save
+plot77_78 = Plot.new(
+    farmer_id: 77,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot77_78.save
+farmer78 = Farmer.new( 
     title: 'นาง',
     firstName: 'เพ็ญศรี',
     lastName: 'สันทอง',
@@ -1653,11 +3585,36 @@ farmer79 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer79/*"].each do |pic|
-    farmer79.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer79.save
-farmer80 = Farmer.new( 
+farmer78.save
+plot78_79 = Plot.new(
+    farmer_id: 78,
+    areaRai: 8.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot78_79.save
+farmer79 = Farmer.new( 
     title: 'นาง',
     firstName: 'จันทร์เพ็ญ',
     lastName: 'คชศิลา',
@@ -1674,11 +3631,36 @@ farmer80 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer80/*"].each do |pic|
-    farmer80.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer80.save
-farmer81 = Farmer.new( 
+farmer79.save
+plot79_80 = Plot.new(
+    farmer_id: 79,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot79_80.save
+farmer80 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'พูลทรัพย์',
     lastName: 'พร้อมประเสริฐ',
@@ -1695,11 +3677,36 @@ farmer81 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer81/*"].each do |pic|
-    farmer81.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer81.save
-farmer82 = Farmer.new( 
+farmer80.save
+plot80_81 = Plot.new(
+    farmer_id: 80,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot80_81.save
+farmer81 = Farmer.new( 
     title: 'นาง',
     firstName: 'สถาพร',
     lastName: 'รักษาพันธุ์',
@@ -1716,11 +3723,36 @@ farmer82 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer82/*"].each do |pic|
-    farmer82.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer82.save
-farmer83 = Farmer.new( 
+farmer81.save
+plot81_82 = Plot.new(
+    farmer_id: 81,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot81_82.save
+farmer82 = Farmer.new( 
     title: 'นาง',
     firstName: 'จวน',
     lastName: 'โอสถ',
@@ -1737,11 +3769,36 @@ farmer83 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer83/*"].each do |pic|
-    farmer83.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer83.save
-farmer84 = Farmer.new( 
+farmer82.save
+plot82_83 = Plot.new(
+    farmer_id: 82,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot82_83.save
+farmer83 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุกัญญา',
     lastName: 'สุขเกษม',
@@ -1758,11 +3815,36 @@ farmer84 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer84/*"].each do |pic|
-    farmer84.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer84.save
-farmer85 = Farmer.new( 
+farmer83.save
+plot83_84 = Plot.new(
+    farmer_id: 83,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot83_84.save
+farmer84 = Farmer.new( 
     title: 'นาง',
     firstName: 'อุทิบ',
     lastName: 'โหมดตาด',
@@ -1779,11 +3861,36 @@ farmer85 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer85/*"].each do |pic|
-    farmer85.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer85.save
-farmer86 = Farmer.new( 
+farmer84.save
+plot84_85 = Plot.new(
+    farmer_id: 84,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot84_85.save
+farmer85 = Farmer.new( 
     title: 'นาย',
     firstName: 'ปลอด',
     lastName: 'พร้อมประเสริฐ',
@@ -1800,11 +3907,36 @@ farmer86 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer86/*"].each do |pic|
-    farmer86.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer86.save
-farmer87 = Farmer.new( 
+farmer85.save
+plot85_86 = Plot.new(
+    farmer_id: 85,
+    areaRai: 5.0925,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot85_86.save
+farmer86 = Farmer.new( 
     title: 'นาง',
     firstName: 'ปราณีต',
     lastName: 'สิงห์แก้ว',
@@ -1821,11 +3953,36 @@ farmer87 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer87/*"].each do |pic|
-    farmer87.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer87.save
-farmer88 = Farmer.new( 
+farmer86.save
+plot86_87 = Plot.new(
+    farmer_id: 86,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '7',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot86_87.save
+farmer87 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'ลัดดาวรรณ',
     lastName: 'อินทมา',
@@ -1842,11 +3999,36 @@ farmer88 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer88/*"].each do |pic|
-    farmer88.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer88.save
-farmer89 = Farmer.new( 
+farmer87.save
+plot87_88 = Plot.new(
+    farmer_id: 87,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'บางไทร',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot87_88.save
+farmer88 = Farmer.new( 
     title: 'นาง',
     firstName: 'บุปผา',
     lastName: 'จีนละเอียด',
@@ -1863,11 +4045,36 @@ farmer89 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer89/*"].each do |pic|
-    farmer89.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer89.save
-farmer90 = Farmer.new( 
+farmer88.save
+plot88_89 = Plot.new(
+    farmer_id: 88,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot88_89.save
+farmer89 = Farmer.new( 
     title: 'นาง',
     firstName: 'เตือนใจ',
     lastName: 'อักษรศรี',
@@ -1884,11 +4091,36 @@ farmer90 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer90/*"].each do |pic|
-    farmer90.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer90.save
-farmer91 = Farmer.new( 
+farmer89.save
+plot89_90 = Plot.new(
+    farmer_id: 89,
+    areaRai: 2.0,
+    treeCount: 27,
+    breed: 'อีล่า/ปุยปชฝ้าย',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot89_90.save
+farmer90 = Farmer.new( 
     title: 'นาย',
     firstName: 'นิยม',
     lastName: 'หนูนวล',
@@ -1905,11 +4137,36 @@ farmer91 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer91/*"].each do |pic|
-    farmer91.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer91.save
-farmer92 = Farmer.new( 
+farmer90.save
+plot90_91 = Plot.new(
+    farmer_id: 90,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot90_91.save
+farmer91 = Farmer.new( 
     title: 'นาย',
     firstName: 'อนันต์',
     lastName: 'เนาว์นาน',
@@ -1926,11 +4183,36 @@ farmer92 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer92/*"].each do |pic|
-    farmer92.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer92.save
-farmer93 = Farmer.new( 
+farmer91.save
+plot91_92 = Plot.new(
+    farmer_id: 91,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot91_92.save
+farmer92 = Farmer.new( 
     title: 'นาย',
     firstName: 'พงศธร',
     lastName: 'อนุจันทร์',
@@ -1947,11 +4229,36 @@ farmer93 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer93/*"].each do |pic|
-    farmer93.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer93.save
-farmer94 = Farmer.new( 
+farmer92.save
+plot92_93 = Plot.new(
+    farmer_id: 92,
+    areaRai: 3.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot92_93.save
+farmer93 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุชาติ',
     lastName: 'อักษรมี',
@@ -1968,11 +4275,36 @@ farmer94 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer94/*"].each do |pic|
-    farmer94.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer94.save
-farmer95 = Farmer.new( 
+farmer93.save
+plot93_94 = Plot.new(
+    farmer_id: 93,
+    areaRai: 5.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot93_94.save
+farmer94 = Farmer.new( 
     title: 'นาง',
     firstName: 'สายใจ',
     lastName: 'ชิดชาตรี',
@@ -1989,11 +4321,36 @@ farmer95 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer95/*"].each do |pic|
-    farmer95.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer95.save
-farmer96 = Farmer.new( 
+farmer94.save
+plot94_95 = Plot.new(
+    farmer_id: 94,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot94_95.save
+farmer95 = Farmer.new( 
     title: 'นาย',
     firstName: 'นึง',
     lastName: 'อินสอน',
@@ -2010,11 +4367,36 @@ farmer96 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer96/*"].each do |pic|
-    farmer96.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer96.save
-farmer97 = Farmer.new( 
+farmer95.save
+plot95_96 = Plot.new(
+    farmer_id: 95,
+    areaRai: 2.015,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot95_96.save
+farmer96 = Farmer.new( 
     title: 'นาง',
     firstName: 'ชะลอ',
     lastName: 'ฉิมยินดี',
@@ -2031,11 +4413,36 @@ farmer97 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer97/*"].each do |pic|
-    farmer97.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer97.save
-farmer98 = Farmer.new( 
+farmer96.save
+plot96_97 = Plot.new(
+    farmer_id: 96,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '8',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot96_97.save
+farmer97 = Farmer.new( 
     title: 'นาย',
     firstName: 'บุญเกิด',
     lastName: 'ตั้งเจริญ',
@@ -2052,11 +4459,36 @@ farmer98 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer98/*"].each do |pic|
-    farmer98.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer98.save
-farmer99 = Farmer.new( 
+farmer97.save
+plot97_98 = Plot.new(
+    farmer_id: 97,
+    areaRai: 2.045625,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot97_98.save
+farmer98 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'วรรณวิมล',
     lastName: 'ตั้งแจริญ',
@@ -2073,11 +4505,36 @@ farmer99 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer99/*"].each do |pic|
-    farmer99.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer99.save
-farmer100 = Farmer.new( 
+farmer98.save
+plot98_99 = Plot.new(
+    farmer_id: 98,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot98_99.save
+farmer99 = Farmer.new( 
     title: 'นาย',
     firstName: 'ทวีศักดิ์',
     lastName: 'พันธุกิจ',
@@ -2094,11 +4551,36 @@ farmer100 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer100/*"].each do |pic|
-    farmer100.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer100.save
-farmer101 = Farmer.new( 
+farmer99.save
+plot99_100 = Plot.new(
+    farmer_id: 99,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot99_100.save
+farmer100 = Farmer.new( 
     title: 'นาย',
     firstName: 'จันทร์',
     lastName: 'เดชวงษา',
@@ -2115,11 +4597,36 @@ farmer101 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer101/*"].each do |pic|
-    farmer101.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer101.save
-farmer102 = Farmer.new( 
+farmer100.save
+plot100_101 = Plot.new(
+    farmer_id: 100,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot100_101.save
+farmer101 = Farmer.new( 
     title: 'นาย',
     firstName: 'ฉลวย',
     lastName: 'พิพัฒน์พงศ์นยนา',
@@ -2136,11 +4643,36 @@ farmer102 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer102/*"].each do |pic|
-    farmer102.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer102.save
-farmer103 = Farmer.new( 
+farmer101.save
+plot101_102 = Plot.new(
+    farmer_id: 101,
+    areaRai: nan,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot101_102.save
+farmer102 = Farmer.new( 
     title: 'นางสาว',
     firstName: 'จารีรัตน์',
     lastName: 'ทองมาลา',
@@ -2157,11 +4689,36 @@ farmer103 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer103/*"].each do |pic|
-    farmer103.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer103.save
-farmer104 = Farmer.new( 
+farmer102.save
+plot102_103 = Plot.new(
+    farmer_id: 102,
+    areaRai: 6.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot102_103.save
+farmer103 = Farmer.new( 
     title: 'นาย',
     firstName: 'รณภพ',
     lastName: 'พรหมบุตร',
@@ -2178,11 +4735,36 @@ farmer104 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer104/*"].each do |pic|
-    farmer104.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer104.save
-farmer105 = Farmer.new( 
+farmer103.save
+plot103_104 = Plot.new(
+    farmer_id: 103,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot103_104.save
+farmer104 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุนทรา',
     lastName: 'จีนประชา',
@@ -2199,11 +4781,36 @@ farmer105 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer105/*"].each do |pic|
-    farmer105.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer105.save
-farmer106 = Farmer.new( 
+farmer104.save
+plot104_105 = Plot.new(
+    farmer_id: 104,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot104_105.save
+farmer105 = Farmer.new( 
     title: 'นาย',
     firstName: 'สมบัติ',
     lastName: 'ฉิมยินดี',
@@ -2220,11 +4827,36 @@ farmer106 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer106/*"].each do |pic|
-    farmer106.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer106.save
-farmer107 = Farmer.new( 
+farmer105.save
+plot105_106 = Plot.new(
+    farmer_id: 105,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot105_106.save
+farmer106 = Farmer.new( 
     title: 'นาง',
     firstName: 'อุทุมพร',
     lastName: 'จันทร์พรหมแก้ว',
@@ -2241,11 +4873,36 @@ farmer107 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer107/*"].each do |pic|
-    farmer107.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer107.save
-farmer108 = Farmer.new( 
+farmer106.save
+plot106_107 = Plot.new(
+    farmer_id: 106,
+    areaRai: 2.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '3',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot106_107.save
+farmer107 = Farmer.new( 
     title: 'นาง',
     firstName: 'อวยพร',
     lastName: 'สอนอินทร์',
@@ -2262,11 +4919,36 @@ farmer108 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer108/*"].each do |pic|
-    farmer108.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer108.save
-farmer109 = Farmer.new( 
+farmer107.save
+plot107_108 = Plot.new(
+    farmer_id: 107,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot107_108.save
+farmer108 = Farmer.new( 
     title: 'นาง',
     firstName: 'อำไพ',
     lastName: 'เข็มทอง',
@@ -2283,11 +4965,36 @@ farmer109 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer109/*"].each do |pic|
-    farmer109.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer109.save
-farmer110 = Farmer.new( 
+farmer108.save
+plot108_109 = Plot.new(
+    farmer_id: 108,
+    areaRai: 1.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot108_109.save
+farmer109 = Farmer.new( 
     title: 'นาง',
     firstName: 'สุชาดา',
     lastName: 'สุวรรณโชติ',
@@ -2304,11 +5011,36 @@ farmer110 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer110/*"].each do |pic|
-    farmer110.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer110.save
-farmer111 = Farmer.new( 
+farmer109.save
+plot109_110 = Plot.new(
+    farmer_id: 109,
+    areaRai: 2.0975,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '9',
+    addressTambon: 'คลองน้อย',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot109_110.save
+farmer110 = Farmer.new( 
     title: 'นาย',
     firstName: 'มนต์ไชย',
     lastName: 'เนาว์นาน',
@@ -2325,7 +5057,32 @@ farmer111 = Farmer.new(
     line: '-',
     email: '-'
     )
-Dir[Rails.root + "seedPicture/farmer111/*"].each do |pic|
-    farmer111.picture.attach(io: File.open(pic), filename: pic.split('/').last)
-end
-farmer111.save
+farmer110.save
+plot110_111 = Plot.new(
+    farmer_id: 110,
+    areaRai: 0.0,
+    treeCount: nan,
+    breed: 'nan',
+    project: '',
+    certificate: '',
+    certificateDate: '',
+    harvestPeriod: '',
+    harvestQuantity: '',
+    price: '',
+    plotManagement: '',
+    fertilizeManagement: '',
+    waterManagement: '',
+    illnessManagement: '',
+    harvestManagement: '',
+    sellingChannel: '',
+    logistic: '',
+    addressNo: '',
+    addressMoo: '4',
+    addressTambon: 'บางไทร',
+    addressAmphoe: 'เมือง',
+    addressProvince: 'สุราษฎร์ธานี',
+    addressZipcode: '',
+    lat: '',
+    long: ''
+    )
+plot110_111.save
