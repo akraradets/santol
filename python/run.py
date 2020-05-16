@@ -169,13 +169,6 @@ def createPlot(records, farmer_id):
     harvestPeriod: '',
     harvestQuantity: '',
     price: '',
-    plotManagement: '',
-    fertilizeManagement: '',
-    waterManagement: '',
-    illnessManagement: '',
-    harvestManagement: '',
-    sellingChannel: '',
-    logistic: '',
     addressNo: '',
     addressMoo: '{addressMoo}',
     addressTambon: '{addressTambon}',
@@ -185,6 +178,13 @@ def createPlot(records, farmer_id):
     lat: '',
     long: ''
     )"""
+    # plotManagement: '',
+    # fertilizeManagement: '',
+    # waterManagement: '',
+    # illnessManagement: '',
+    # harvestManagement: '',
+    # sellingChannel: '',
+    # logistic: '',
     return plot
 
 nameList = {}
