@@ -1,4 +1,4 @@
-set :deploy_to, "/var/www/satol"
+set :deploy_to, "/var/www/santol"
 
 server "167.99.71.28", user: "deploy", roles: %w{app db web}
 

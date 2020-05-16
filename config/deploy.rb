@@ -1,11 +1,10 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.2"
 
-set :application, "tangmo"
-set :repo_url, "git@github.com:akraradets/satol.git"
+set :application, "santol"
+set :repo_url, "git@github.com:akraradets/santol.git"
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.4'
-# set :repo_tree, 'ispeaker-app'
 
 append :linked_files, "config/database.yml", "config/master.key"
 
@@ -23,14 +22,10 @@ namespace :deploy do
   after :publishing, :restart
 end
 
-# set :application, "tangmo"
-# set :repo_url, "git@github.com:akraradets/tangmo.git"
-
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/tangmo"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

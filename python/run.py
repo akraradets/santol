@@ -52,6 +52,7 @@ def createFarmer(record):
     if(record[4] == math.nan):
         dateOfBirth = datetime.datetime.strptime(record[4],'%d/%m/%Y')
         dateOfBirth = dateOfBirth.replace(year=dateOfBirth.year-543).strftime('%d-%m-%Y')
+    dateOfBirth_str = f" Date.strptime('{dateOfBirth}', '%d-%m-%Y')" if(dateOfBirth != None) else 'nil'
     # 5	อายุเกษตรกร - skip
     # 6	addressNo
     addressNo = record[6]
@@ -78,7 +79,7 @@ def createFarmer(record):
     title: '{title:}',
     firstName: '{firstName:}',
     lastName: '{lastName:}',
-    dateOfBirth: Date.strptime('{dateOfBirth}', '%d-%m-%Y'),
+    dateOfBirth: {dateOfBirth_str},
     group: '{group:}',
     addressNo: '{addressNo}',
     addressMoo: '{addressMoo}',
@@ -133,21 +134,22 @@ def createPlot(records, farmer_id):
     # 10 จำนวนแปลง
 
     # 11 addressMoo - plot
-    addressMoo = record[11]
+    addressMoo = record[11] if( not (type(record[11]) == type(float()) and math.isnan(record[11]) ) ) else 'nil'
     # 12 addressTambon - plot
-    addressTambon = record[12]
+    addressTambon = record[12] if( not (type(record[12]) == type(float()) and math.isnan(record[12]) ) ) else ""
 
     # 15 ไร่
     # 16 งาน
     # 17 วา
     # 1 ไร่ = 400 ตารางวา = 4 งาน
     areaRai = record[15] + record[16]/4 * record[17]/400 
+    areaRai = areaRai if( not (type(areaRai) == type(float()) and math.isnan(areaRai) ) ) else 'nil'
     # 18 ชนิดพืช
     # 19 จำนวนต้น
-    treeCount = record[19] if(record[19] != math.nan) else None
+    treeCount = record[19] if( not (type(record[19]) == type(float()) and math.isnan(record[19]) ) ) else 'nil'
     # 20 อายุปลูก/ปี
     # 21 พันธุ์ที่ปลูก
-    breed = record[21] if(record[21] != math.nan) else "-"
+    breed = record[21] if( not (type(record[21]) == type(float()) and math.isnan(record[21]) ) ) else "-"
     # 22 ปริมาณ ผลผลิต/ปี
     # 23 กลุ่มสมาชิก
     # group = record[23].replace('-','').strip() if type(record[23]) == type("") else "-"
