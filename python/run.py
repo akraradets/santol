@@ -28,11 +28,13 @@ def getCol(record, col):
     except:
         return ""
 
-def createFarmer(records):
-    # 0	ข้อมูลเกษตรกรในโครงการวิจัยและพัฒนาการผลิตแตงโมบ้านทุ่งอ่าว	
+def createFarmer(record):
+    print(record)
+    # 0	id
     # 1	รหัสเกษตรกร
+    farmer_id = record[1]
     # 2	ชื่อ-สกุล
-    firstName, lastName = records[2][3].strip().split(' ')
+    firstName, lastName = record[2].replace('  ',' ').strip().split(' ')
     # firstName, lastName = "นางสาวฉัตราภรณ์ สุขทา ".strip().split(' ')
     title = ""
     if(firstName[0:3] == "นาย"):
@@ -44,57 +46,41 @@ def createFarmer(records):
     elif(firstName[0:3] == "นาง"):
         title = "นาง"
         firstName = firstName[3:]
-    # 3	วัน/เดือน/ปี เกิด
-    # dateOfBirth: Date.strptime('20-05-1965', '%d-%m-%Y'),
-    dateOfBirth = records[3][3]
-    dateOfBirth = dateOfBirth.replace(year=dateOfBirth.year-543).strftime('%d-%m-%Y')
-    # 4	อายุเกษตรกร
-    # 5	ที่อยู่อาศัย
-    addresses = records[5][3].strip().split(' ')
-    # ['32/9', 'หมู่', '3', 'ต.ศรีวิชัย', 'อ.พุนพิน', 'จ.สุราษฎร์ธานี']
-    addressNo = ""
-    addressMoo = ""
-    addressTambon = ""
-    addressAmphoe = ""
-    addressProvince = ""
+    # 3 citizen id
+    citizen_id = record[3]
+    # 4	วัน/เดือน/ปี เกิด
+    # dateOfBirth: Date.strptime('20-05-1965', '%d-%m-%Y')
+    dateOfBirth = None
+    if(record[4] == math.nan):
+        dateOfBirth = datetime.datetime.strptime(record[4],'%d/%m/%Y')
+        dateOfBirth = dateOfBirth.replace(year=dateOfBirth.year-543).strftime('%d-%m-%Y')
+    # 5	อายุเกษตรกร - skip
+    # 6	addressNo
+    addressNo = record[6]
+    # 7 addressMoo
+    addressMoo = record[7]
+    # 8 addressTambon
+    addressTambon = record[8]
+    addressAmphoe = 'เมือง'
+    addressProvince = 'สุราษฎร์ธานี'
     addressZipcode = ""
+    # 9 phone
+    phone = record[9].replace('-','').strip() if type(record[9]) == type("") else "-"
+    # 10 จำนวนแปลง
+    # ? ชนิดพืช
+    # 19 จำนวนต้น
+    # 20 อายุปลูก/ปี
+    # 21 พันธุ์ที่ปลูก
+    # 22 ปริมาณ ผลผลิต/ปี
+    # 23 กลุ่มสมาชิก
+    group = record[23].replace('-','').strip() if type(record[23]) == type("") else "-"
+    # 26 Lat Long
 
-    isAddressNo = True
-    nextIsMoo = False
-    mightBeZipcode = False
-    for data in addresses:
-        if(nextIsMoo):
-            nextIsMoo = False
-            addressMoo = data
-        elif(data.find('.') == -1):
-            if(data == "หมู่"):
-                nextIsMoo = True
-            elif(mightBeZipcode):
-                addressZipcode = data
-            elif(isAddressNo):
-                addressNo = data
-        else:
-            if(data.split('.')[0] == "ต"):
-                addressTambon = data.split('.')[1]
-            if(data.split('.')[0] == "อ"):
-                addressAmphoe = data.split('.')[1]
-            if(data.split('.')[0] == "จ"):
-                addressProvince = data.split('.')[1]
-        mightBeZipcode = True
-        isAddressNo = False
-    # 6	จำนวนแปลง
-    # 7	ขนาดพื้นที่รวมทุกแปลง (ไร่)
-    # 8	เป็นสมาชิกกลุ่ม
-    # group: "ชมรมแตงโมปลอดสารพิษผู้ผลิตปลอดโรค",
-    group = records[8][3].strip() if type(records[8][3]) == type("") else "-" 
-    # 9	ประสบการณ์การปลูกแตงโม (ปี)
-    # 10	เบอร์โทรศัพท์
-    phone = records[10][3].strip() if type(records[10][3]) == type("") else "-" 
     # 11	อีเมล
-    email = records[11][3].strip() if type(records[11][3]) == type("") else "-" 
+    # email = record[11].strip() if type(record[11]) == type("") else "-" 
     # 12	ช่องทางการขายและติดต่อ
-    facebook = records[12][6].strip() if type(records[12][6]) == type("") else "-" 
-    line = getCol(records[12],8).strip() if type(getCol(records[12],8)) == type("") else "-" 
+    # facebook = record[12].strip() if type(record[12]) == type("") else "-" 
+    # line = getCol(record[12],8).strip() if type(getCol(record[12],8)) == type("") else "-" 
     # 13	พันธุ์ของแตงโม
     # 14	รูปถ่ายเกษตรกร ครึ่งตัว ใบหน้ายิ้มแย้มถ่ายคู่กับผลผลิต
 
@@ -111,9 +97,9 @@ def createFarmer(records):
     addressProvince: '{addressProvince}',
     addressZipcode: '{addressZipcode}',
     phone: '{phone}',
-    facebook: '{facebook}',
-    line: '{line}',
-    email: '{email}'
+    facebook: '-',
+    line: '-',
+    email: '-'
     )"""
 
     return farmer
@@ -284,31 +270,51 @@ def createPlot(records, farmer_id):
     # logistic: '{'มีรถมารับซื้อ':'true','รถกระบะ':'true'}',
     return plot
 
-
+nameList = set()
 seedFile = open('seed_tail.txt','w')
-filenames = sorted(glob.glob("./xls/*"), key=alphanum_key)
+# filenames = sorted(glob.glob("./xls/*"), key=alphanum_key)
+excel = pandas.ExcelFile("./xls/master.xlsx")
+dfs = pandas.read_excel(excel,0)
+records = dfs.to_records()
+
 farmer_id = 1
-for filename in filenames:
-    print(f"{farmer_id}: read file - {filename}")
-    excel = pandas.ExcelFile(filename)
-    for i in range(len(excel.sheet_names)):
-        # Farmer Records
-        if i == 0:
+for record in records:
+    # if the first colum is not an int then skip it
+    plot_id = record[1]
+    if(type(plot_id) == type(1)):
+        # always create plot
+        # if name is new -> create farmer
+        name = record[2]
+        if( nameList.isdisjoint(set(name)) ):
+            nameList.add(name)
             objName = f"farmer{farmer_id}"
-            print(f"{farmer_id}: - {objName}")
-            dfs = pandas.read_excel(excel,0)
-            seedFile.write( f"{objName} = {createFarmer(dfs.to_records())}\n" )
+            seedFile.write( f"{objName} = {createFarmer(record)}\n" )
             seedFile.write( attachPicture(objName,'picture') + "\n" )
             seedFile.write( f"{objName}.save\n")
             print(f"{farmer_id}: - {objName} [DONE]")
-        # Plot Records
-        elif i < len(excel.sheet_names) - 1:
-            objName = f"plot{farmer_id}_{i}"
-            print(f"{farmer_id}: - {objName}")
-            dfs = pandas.read_excel(excel,i)
-            seedFile.write( f"{objName} = {createPlot(dfs.to_records(), farmer_id)}\n" )
-            seedFile.write( attachPicture(objName, 'pictures') + "\n" )
-            seedFile.write( f"{objName}.save\n")
-            print(f"{farmer_id}: - {objName} [DONE]")
-    farmer_id = farmer_id + 1
+
+# farmer_id = 1
+# for filename in filenames:
+#     print(f"{farmer_id}: read file - {filename}")
+#     excel = pandas.ExcelFile(filename)
+#     for i in range(len(excel.sheet_names)):
+#         # Farmer Records
+#         if i == 0:
+#             objName = f"farmer{farmer_id}"
+#             print(f"{farmer_id}: - {objName}")
+#             dfs = pandas.read_excel(excel,0)
+#             seedFile.write( f"{objName} = {createFarmer(dfs.to_records())}\n" )
+#             seedFile.write( attachPicture(objName,'picture') + "\n" )
+#             seedFile.write( f"{objName}.save\n")
+#             print(f"{farmer_id}: - {objName} [DONE]")
+#         # Plot Records
+#         elif i < len(excel.sheet_names) - 1:
+#             objName = f"plot{farmer_id}_{i}"
+#             print(f"{farmer_id}: - {objName}")
+#             dfs = pandas.read_excel(excel,i)
+#             seedFile.write( f"{objName} = {createPlot(dfs.to_records(), farmer_id)}\n" )
+#             seedFile.write( attachPicture(objName, 'pictures') + "\n" )
+#             seedFile.write( f"{objName}.save\n")
+#             print(f"{farmer_id}: - {objName} [DONE]")
+#     farmer_id = farmer_id + 1
 seedFile.close()
