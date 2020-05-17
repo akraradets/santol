@@ -4,19 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tangmo</title>
+    <title><%= Rails.configuration.title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="shortcut icon" type="image/png" href="<%= image_url('TANGMO_logo.png') %>"/>
+    <link rel="shortcut icon" type="image/png" href="<%= image_url(Rails.configuration.logo) %>"/>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
 <style>
-  .bg-pattern {
-    background-image: url("<%= image_url('TANGMO_pattern.png') %>");
-    background-color: #d7ccc8 !important;
-  }
   .my-container {
       /* background: #d7ccc8; */
       /* overflow: hidden; */
@@ -54,7 +50,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <!-- Nav bar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-main">
-      <a class="navbar-brand" href="/"> <%= image_tag 'TANGMO_logo.png', height:37, width:37 %></a>
+      <a class="navbar-brand" href="/"> <%= image_tag Rails.configuration.logo, height:37, width:37 %></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,7 +62,7 @@
             <a class="nav-link" href="<%= farmers_path %>">เกษตรกร</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="<%= plots_path %>">แปลงแตงโม</a>
+            <a class="nav-link" href="<%= plots_path %>">แปลง<%= Rails.configuration.thai %></a>
           </li>
           <% if !current_user.nil? %>
           <li class="nav-item dropdown">
@@ -129,15 +125,15 @@
       </div>
     </div>
     <!-- Footer -->
-    <nav class="navbar fixed-bottom navbar-dark bg-dark" style="color:white; display:none;">
+    <nav class="navbar fixed-bottom navbar-dark bg-dark" style="color:white;">
       <div>
-        <small>© Copyright PHANGAN ORGANIC COCONUT TRACABILITY SYSTEM.</small>
+        <small></small>
       </div>
-      <div>
-        <%# <small>Web Application Engineering</small> %>
-      </div>
-      <div>
+      <%# <div>
         <small>Created By โครงการพัฒนามะพร้าวอินทรีย์เกาะพะงัน</small>
+      </div> %>
+      <div>
+        <small><%= Rails.configuration.version %> - <%= Rails.configuration.date %></small>
       </div>
     </nav>
   </body>
