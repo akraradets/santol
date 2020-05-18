@@ -72,7 +72,8 @@ def createFarmer(record):
     # 21 พันธุ์ที่ปลูก
     # 22 ปริมาณ ผลผลิต/ปี
     # 23 กลุ่มสมาชิก
-    group = record[23].replace('-','').strip() if type(record[23]) == type("") else "-"
+    # group = record[23].replace('-','').strip() if type(record[23]) == type("") else "-"
+    group = 'โครงการเกษตรแปลงใหญ่'
     # 26 Lat Long
 
     farmer = f"""Farmer.new( 
@@ -80,7 +81,7 @@ def createFarmer(record):
     firstName: '{firstName:}',
     lastName: '{lastName:}',
     dateOfBirth: {dateOfBirth_str},
-    group: '{group:}',
+    group: '{group}',
     addressNo: '{addressNo}',
     addressMoo: '{addressMoo}',
     addressTambon: '{addressTambon}',
