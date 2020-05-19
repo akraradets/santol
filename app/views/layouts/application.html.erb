@@ -33,17 +33,14 @@
     background-color: #ffcdd2 !important;
   }
 
-  .come-in {
-    transform: translateY(150px);
-    animation: come-in 1s ease forwards;
-  }
-  .come-in:nth-child(odd) {
-    animation-duration: 1s; /* So they look staggered */
+  .center-cropped {
+    width: 100%;
+    max-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
   }
 
-  @keyframes come-in {
-    to { transform: translateY(0); }
-  }
 </style>
   <body>
     <script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
