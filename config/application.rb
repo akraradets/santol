@@ -11,7 +11,14 @@ module Tangmo
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     config.version = "1.0.2"
-    config.date = "19-05-2020"
+    config.date = "20-05-2020"
+    config.project = "โครงการวิจัยและพัฒนาการผลิตกระท้อนคลองน้อย"
+    # #3e2723 brown darken-4
+    # #ffcdd2 red lighten-4
+    # #424242 grey darken-3
+    config.acentColour = "#ffcdd2"
+    config.navbar = "navbar-light"
+    config.footerTextColor = "black"
 
     config.title = "Kratorn"
     config.logo = "KRATORN_LOGO.png"
