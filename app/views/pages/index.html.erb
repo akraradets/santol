@@ -89,15 +89,6 @@
 
   .overflow-hidden { overflow: hidden; }
 
-  div.banner {
-    /* width:100%; width of your image */
-    height:auto; /*height of your image*/
-    background-image:url(<%= image_url('firstPage/banner.jpg') %>);
-    margin:0; /* If you want no margin */
-    padding:0; /*if your want to padding */
-    background-position: center;
-    /* content:url(<%= image_url('firstPage/banner.jpg') %>); */
-  }
 </style>
 <script>
   $( document ).ready(function() {
@@ -110,13 +101,17 @@
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item center-cropped active">
-        <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>" alt="First slide">
+        <img class="d-block w-100" src="<%= image_url('firstPage/banner1.png') %>">
       </div>
       <div class="carousel-item center-cropped">
-        <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>" alt="First slide">
+        <img class="d-block w-100" src="<%= image_url('firstPage/banner2.png') %>">
+      </div>
+      <div class="carousel-item center-cropped">
+        <img class="d-block w-100" src="<%= image_url('firstPage/banner3.png') %>">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -150,21 +145,21 @@
   </div> -->
   <div class="wow fadeIn bg-dark mr-md-3 px-3 px-md-5 text-center text-white overflow-hidden">
     <div class="py-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
+      <h2 class="display-5">พันธุ์ปุยฝ้าย</h2>
+      <p class="lead"><br></p>
     </div>
-    <div class="bg-light center-cropped" style="width: 100%; height: auto;">
-      <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>">
+    <div class="bg-light center-cropped" style="width: 100%; height: auto;">      
+      <img class="d-block w-100" src="<%= image_url('firstPage/puifai-1.png') %>">
     </div>
   </div>
 
   <div class="wow fadeIn bg-light mr-md-3 px-3 px-md-5 text-center overflow-hidden">
     <div class="p-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
+      <h2 class="display-5">ยำกระท้อน</h2>
+      <p class="lead"><br></p>
     </div>
     <div class="bg-light center-cropped" style="width: 100%; height: auto;">
-      <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>">
+      <img class="d-block w-100" src="<%= image_url('firstPage/yum.png') %>">
     </div>
   </div>
 </div>
@@ -172,20 +167,20 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="wow fadeIn bg-light mr-md-3 px-3 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
+      <h2 class="display-5">โครงการเกษตรแปลงใหญ่</h2>
+      <p class="lead"><br></p>
     </div>
     <div class="bg-light center-cropped" style="width: 100%; height: auto;">
-      <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>">
+      <img class="d-block w-100" src="<%= image_url('firstPage/farmer-group.png') %>">
     </div>
   </div>
   <div class="wow fadeIn bg-main mr-md-3 px-3 px-md-5 text-center overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5">Another headline</h2>
-      <p class="lead">And an even wittier subheading.</p>
+      <h2 class="display-5">เกษตรกร</h2>
+      <p class="lead"><br></p>
     </div>
     <div class="bg-light center-cropped" style="width: 100%; height: auto;">
-      <img class="d-block w-100" src="<%= image_url('firstPage/banner.jpg') %>">
+      <img class="d-block w-100" src="<%= image_url('firstPage/farmer.png') %>">
     </div>
   </div>
 </div>
