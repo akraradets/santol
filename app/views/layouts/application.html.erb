@@ -27,10 +27,8 @@
     border-color: #d7ccc8;
   }
   .bg-main {
-    /* #3e2723 brown darken-4 */
-    /* #ffcdd2 red lighten-4 */
-    /* #424242 grey darken-3 */
-    background-color: #ffcdd2 !important;
+
+    background-color: <%= Rails.configuration.acentColour %> !important;
   }
 
   .center-cropped {
@@ -133,9 +131,9 @@
       <div>
         <small></small>
       </div>
-      <%# <div>
-        <small>Created By โครงการพัฒนามะพร้าวอินทรีย์เกาะพะงัน</small>
-      </div> %>
+      <div>
+        <small>Created By <%= Rails.configuration.project %></small>
+      </div>
       <div>
         <small><%= Rails.configuration.version %> - <%= Rails.configuration.date %></small>
       </div>
