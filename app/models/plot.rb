@@ -41,6 +41,10 @@ class Plot < ApplicationRecord
       if self.logistic.nil?
         self.logistic = {}.to_json
       end
+
+      if(self.polygon.nil?)
+        self.polygon = [].to_json
+      end
     end
   end
 
@@ -59,6 +63,9 @@ class Plot < ApplicationRecord
 
   def areaSqurekilometre
     # 1 rai = 0.0016 kilometre
+    if(areaRai.nil?)
+      return ''
+    end
     areaSqurekilometre = areaRai * 0.0016
     return  areaSqurekilometre
   end

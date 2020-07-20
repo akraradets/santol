@@ -95,14 +95,10 @@
   $( document ).ready(function() {
     $("#nav-li-firstPage").addClass('active');
 
-    // Init map
-    map = L.map('map', {
-        center: [9.19019, 99.2241],
-        zoom: 13
-    });
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    // Init map here
+    var lat = <%= Rails.configuration.centerLat_default %>;
+    var lng = <%= Rails.configuration.centerLng_default %>;
+    map = initMap(lat, lng, false, 'map');
     addMaker();
 
   });
@@ -122,9 +118,11 @@
             '<tr><td><%= link_to "ไปที่แปลง", plot %></td><td><a href="https://www.google.com/maps/search/?api=1&query=<%= plot.lat %>,<%= plot.long %>" target="_blank">นำทาง</a></td></tr>'+
             "</table>"
           );
-        
-    <% end 
-    end %>
+    <% end %>
+      <% if(plot.polygon.nil? == false) %>
+        L.polygon(JSON.parse('<%= raw plot.polygon %>')).addTo(map);
+      <% end %>
+    <% end %>
   }
 
 </script>
